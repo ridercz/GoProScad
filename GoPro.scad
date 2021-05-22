@@ -1,5 +1,5 @@
 /****************************************************************************
- * Altair's GoPro mounts library for OpenSCAD   version: 1.2.1 (2021-05-23) *
+ * Altair's GoPro mounts library for OpenSCAD   version: 1.2.2 (2021-05-23) *
  * Copyright (c) Michal A. Valasek, 2021                                    *
  * ------------------------------------------------------------------------ *
  * www.rider.cz | www.altair.blog | github.com/ridercz/GoProScad            *
@@ -19,7 +19,7 @@ __gopro_wall_head = 3;                  // Thickness of wall in the wide part
 __gopro_knurl_diameter = 4;             // Diameter of knurls
 __gopro_knurl_offset = -1;              // Center distance offset of knurls
 
-module gopro_mount_f(base_height = 3, base_width = 24, leg_height = 17, nut_diameter = 11.5, nut_sides = 4, nut_depth = 3, center = false, $fudge = 1) {
+module gopro_mount_f(base_height = 3, base_width = 20, leg_height = 17, nut_diameter = 11.5, nut_sides = 4, nut_depth = 3, center = false, $fudge = 1) {
     // Check arguments
     assert(base_height > 0, "Parameter base_height must be greater than zero.");
     assert(base_width >= 15, "Parameter base_width must be at least 15.");
