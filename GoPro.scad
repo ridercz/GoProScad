@@ -1,5 +1,5 @@
 /****************************************************************************
- * Altair's GoPro mounts library for OpenSCAD   version: 1.2.0 (2021-05-22) *
+ * Altair's GoPro mounts library for OpenSCAD   version: 1.2.1 (2021-05-23) *
  * Copyright (c) Michal A. Valasek, 2021                                    *
  * ------------------------------------------------------------------------ *
  * www.rider.cz | www.altair.blog | github.com/ridercz/GoProScad            *
@@ -13,7 +13,7 @@ __gopro_hole_diameter = 5;              // M5
 __gopro_hole_tolerance = .5;            // Print tolerance for hole
 __gopro_screw_extension_length = 18;    // Length of the part of screw that sticks out
 __gopro_screw_head_diameter = 9.5;      // M5
-__gopro_screw_hex_head_height = 3.5;    // M5
+__gopro_screw_head_height = 3.5;        // M5
 __gopro_wall_shaft = 1.67;              // Thickness of wall in the narrow part
 __gopro_wall_head = 3;                  // Thickness of wall in the wide part
 __gopro_knurl_diameter = 4;             // Diameter of knurls
@@ -78,8 +78,8 @@ module gopro_screw_handle(screw_length = 50, total_length = 0, hex_head = true, 
     // Computed values
     screw_inner_length = screw_length - __gopro_screw_extension_length;
     screw_hole_diameter = __gopro_hole_diameter + (hex_head ? __gopro_hole_tolerance : 0);
-    real_total_length = total_length > 0 ? total_length : screw_inner_length + 3 * __gopro_screw_hex_head_height;
-    handle_length = real_total_length - screw_inner_length;
+    real_total_length = total_length > 0 ? total_length : screw_inner_length + 3 * __gopro_screw_head_height;
+    handle_length = real_total_length - screw_inner_length + (hex_head ? 0 : __gopro_screw_head_height);
 
     difference() {
         union() {
