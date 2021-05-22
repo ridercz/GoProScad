@@ -1,0 +1,75 @@
+{
+    "parameterSets": {
+        "Nokia 3": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "15",
+            "holder_extra_length": "0",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "8.5",
+            "phone_width": "72",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "NOKIA 3",
+            "use_radius": "true"
+        },
+        "Nokia 3 long": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "15",
+            "holder_extra_length": "100",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "8.5",
+            "phone_width": "72",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "NOKIA 3",
+            "use_radius": "true"
+        },
+        "Xiaomi Mi A3 with cover": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "20",
+            "holder_extra_length": "0",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "13",
+            "phone_width": "75",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "MI A3 + COVER",
+            "use_radius": "true"
+        },
+        "Lumia 950XL long": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "20",
+            "holder_extra_length": "100",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "9",
+            "phone_width": "79",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "LUMIA 950XL",
+            "use_radius": "false"
+        },
+        "Lumia 950XL": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "20",
+            "holder_extra_length": "0",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "9",
+            "phone_width": "79",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "LUMIA 950XL",
+            "use_radius": "false"
+        }
+    },
+    "fileFormatVersion": "1"
+}
