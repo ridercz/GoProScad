@@ -1,6 +1,10 @@
 # GoPro Mounts OpenSCAD Library
 
-This library contains modules to include accessory mounts and screw handles compatible with GoPro. 
+This library contains modules to include accessory mounts and screw handles compatible with GoPro. This type of mounts and holders seems to be kind of standard nowadays. You can use it to mount anything to anything, with one or both parts of the joint 3D printed. To join the parts together a simple M5 screw and nut (square nut, preferrably) is required.
+
+![](Samples/flat_surface_rotational_mount.jpg)
+
+The above photograph shows example models _flat surface rotational mount_ and _phone holder_ for timelapse photography during 3D print.
 
 ## Samples
 
