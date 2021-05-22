@@ -10,6 +10,7 @@ The above photograph shows example models _flat surface rotational mount_ and _p
 
 In the `Samples` folder there is bunch of useful models, showcasing the library functions:
 
+* [`extension_arm.scad`](Samples/extension_arm.scad) is simple M-F extension arm with variable length.
 * [`flat_surface_rotational_mount.scad`](Samples/flat_surface_rotational_mount.scad) is two-part mount that can be screwed to flat surface and offers rotational mount.
 * [`phone_holder.scad`](Samples/phone_holder.scad) is a parametric holder for any cell phone, with or without cover.
 * [`screw_handle.scad`](Samples/screw_handle.scad) is just a simple handles model for M5x50 screws with hex- and flat heads.
