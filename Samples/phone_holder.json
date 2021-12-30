@@ -69,6 +69,20 @@
             "sig_size": "6",
             "sig_text": "LUMIA 950XL",
             "use_radius": "false"
+        },
+        "Xiaomi Mi A1 with cover": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "22",
+            "holder_extra_length": "5",
+            "holder_grip": "0",
+            "holder_height": "9.5",
+            "phone_depth": "11",
+            "phone_width": "81",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "MI A1 + COVER",
+            "use_radius": "false"
         }
     },
     "fileFormatVersion": "1"

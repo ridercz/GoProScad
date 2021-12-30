@@ -36,7 +36,9 @@ difference() {
         // Outer shape
         hull() {
             translate([-holder_depth / 2, 0]) square([holder_depth, $fudge]);
-            translate([0, holder_width - holder_depth / 2]) circle(d = holder_depth);
+            radius_offset = holder_depth / 2 - holder_wall;
+            translate([+radius_offset, holder_width - holder_wall]) circle(r = holder_wall);
+            translate([-radius_offset, holder_width - holder_wall]) circle(r = holder_wall);
         }
 
         // Phone hole
