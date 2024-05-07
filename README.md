@@ -47,7 +47,7 @@ Will create the female mount connector (the one usually found on the tripod/hold
         nut_depth = 3, 
         center = false);
 
-* `base_height`, `base_width` = dimensions of the base plate, depth is always 16 mm.
+* `base_height`, `base_width` = dimensions of the base plate, depth is always 19 mm.
 * `leg_height` = height of the legs. Do not change unless you really have to.
 * `nut_diameter`, `nut_depth`, `nut_sides` = parameters of the embedded nut. Default to M5 square nut. Set `nut_depth = 0` to omit the nut guard.
 * `center` = if set to `false` (default), the model will be centered on X and will begin on Y and Z origins. If set to `true`, the Y will be centered on mounting axis (which is not axis of the model itself).
