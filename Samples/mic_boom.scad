@@ -10,7 +10,7 @@ include <A2D.scad>;         // https://github.com/ridercz/A2D
 assert(a2d_required([1, 6, 2]), "Please upgrade A2D library to version 1.6.2 or higher.");
 
 /* [Mounting screw] */
-screw_hole = 15.5; // [15.5:5/8 in, 9:3/8 in]
+screw_hole = 15.5; // [16:5/8 in, 9.5:3/8 in]
 screw_depth = 10;
 
 /* [Construction] */
