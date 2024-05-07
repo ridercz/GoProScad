@@ -54,6 +54,7 @@ module part_base() {
 
         // Mount holes
         if(screw_diameter > 0 && screw_head_diameter > 0) {
+            echo(screw_distance = base_size - base_radius * 2);
             for(pos = square_points([base_size - base_radius * 2, base_size - base_radius * 2], center = true)) {
                 translate([pos[0], pos[1], -$fudge]) cylinder(d = screw_diameter, h = base_height + 2 * $fudge);
                 translate([pos[0], pos[1], -base_height / 2]) cylinder(d = screw_head_diameter, h = base_height);

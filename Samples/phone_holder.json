@@ -83,6 +83,34 @@
             "sig_size": "6",
             "sig_text": "MI A1 + COVER",
             "use_radius": "false"
+        },
+        "Xiaomi Mi A1 long": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "15",
+            "holder_extra_length": "100",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "8",
+            "phone_width": "76",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "MI A1",
+            "use_radius": "true"
+        },
+        "Samsung S7 long": {
+            "$fn": "32",
+            "$fudge": "1",
+            "holder_depth": "15",
+            "holder_extra_length": "150",
+            "holder_grip": "2",
+            "holder_height": "9.5",
+            "phone_depth": "8",
+            "phone_width": "72",
+            "sig_extr": "1",
+            "sig_size": "6",
+            "sig_text": "S7",
+            "use_radius": "true"
         }
     },
     "fileFormatVersion": "1"
