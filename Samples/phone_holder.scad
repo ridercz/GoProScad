@@ -8,8 +8,8 @@
 include <../GoPro.scad>;    // https://github.com/ridercz/GoProScad
 
 /* [Phone size] */
-phone_width = 79; // [50:150]
-phone_depth = 9; // [5:20]
+phone_width = 79; // [50:.5:150]
+phone_depth = 9; // [5:.5:20]
 // set to true for phones with round sides 
 use_radius = true;
 

@@ -101,16 +101,16 @@
         "Samsung S7 long": {
             "$fn": "32",
             "$fudge": "1",
-            "holder_depth": "15",
-            "holder_extra_length": "150",
+            "holder_depth": "17",
+            "holder_extra_length": "200",
             "holder_grip": "2",
             "holder_height": "9.5",
-            "phone_depth": "8",
-            "phone_width": "72",
+            "phone_depth": "8.5",
+            "phone_width": "70",
             "sig_extr": "1",
             "sig_size": "6",
             "sig_text": "S7",
-            "use_radius": "true"
+            "use_radius": "false"
         }
     },
     "fileFormatVersion": "1"
