@@ -1,0 +1,28 @@
+{
+    "parameterSets": {
+        "Motorola G20 + cover": {
+            "$fn": "32",
+            "$fudge": "1",
+            "com_connector_cutout_offset": "20",
+            "com_connector_cutout_size": "10",
+            "com_connector_side": "-1",
+            "holder_height": "20",
+            "nut_diameter": "20",
+            "nut_height": "5",
+            "nut_sides": "6",
+            "phone_corner_radius": "10",
+            "phone_size": "[80, 170, 8]",
+            "platform_base_height": "1",
+            "platform_ledge_width": "5",
+            "platform_wall": "3",
+            "pwr_connector_cutout_offset": "0",
+            "pwr_connector_cutout_size": "10",
+            "pwr_connector_side": "-1",
+            "screw_diameter": "10.5",
+            "spirit_level_diameter": "14",
+            "spirit_level_height": "8",
+            "spirit_level_inner_diameter": "3"
+        }
+    },
+    "fileFormatVersion": "1"
+}
