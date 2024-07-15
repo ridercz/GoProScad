@@ -1,5 +1,5 @@
 /**********************************************************************************************************************
- * Horizontal phone boom holder for Vanguard tripod                                                 V2.1 (2024-05-05) *
+ * Horizontal phone boom holder for Vanguard tripod                                                 V2.2 (2024-07-15) *
  * ------------------------------------------------------------------------------------------------------------------ *
  * Copyright (c) Michal Altair Valášek, 2024                                                                          *
  *               www.rider.cz | www.altair.blog                                                                       *
@@ -9,14 +9,24 @@
  *********************************************************************************************************************/
 
 include <../GoPro.scad>;    // https://github.com/ridercz/GoProScad
-include <A2D.scad>; // https://github.com/ridercz/A2D
+include <A2D.scad>;         // https://github.com/ridercz/A2D
 assert(a2d_required([1, 6, 2]), "Please upgrade A2D library to version 1.6.2 or higher.");
 
 /* Customizable parameters *******************************************************************************************/
 
+/* [Phone name] */
+// Phone name to be displayed on the holder
+phone_name = "XIAOMI MI A3";
+// Offset from bottom
+phone_name_offset = 2;
+// Phone name emboss depth
+phone_name_depth = 0.8;
+// Phone name text size
+phone_name_size = 8;
+
 /* [Phone platform] */
 // Phone size [x, y, z], including the case
-phone_size = [80, 170, 8];
+phone_size = [73, 154, 5];
 // Phone corner radius, including the case
 phone_corner_radius = 10;
 // Platform wall thickness
@@ -42,15 +52,21 @@ pwr_connector_cutout_size = 10;
 // Offset from the center of the platform
 pwr_connector_cutout_offset = 0;
 // Position of the power connector cutout
-pwr_connector_side = -1; // [-1:Left, 1:Right]
+pwr_connector_side = 1; // [-1:Left, 1:Right]
 
 /* [Communication connector cutout] */
 // Cutout width; set 0 to disable
 com_connector_cutout_size = 10;
 // Offset from the center of the platform
-com_connector_cutout_offset = 20;
+com_connector_cutout_offset = 10;
 // Communication connector cutout position
 com_connector_side = -1; // [-1:Left, 1:Right]
+
+/* [Button cutout] */
+// Cutout width; set 0 to disable
+btn_cutout_size = 40;
+// Offset from top of the phone
+btn_cutout_offset = 30;
 
 /* [Screws] */
 // Screw rod diameter
@@ -81,6 +97,9 @@ difference() {
         translate(v = [-spirit_level_square / 2, -spirit_level_square + platform_wall])  cube([spirit_level_square, spirit_level_square, holder_height]);
     }
 
+    // Phone name
+    translate([0, platform_wall + $fudge, platform_base_height + phone_name_offset]) rotate([90, 0, 0]) linear_extrude(height = phone_name_depth + $fudge) mirror([1, 0, 0]) text(text = phone_name, size = phone_name_size, font = "Arial:bold", valign = "bottom", halign = "center");
+
     // Phone hole
     translate(v = [-phone_size.y / 2, platform_wall, platform_base_height]) linear_extrude(height = holder_height) r_square([phone_size.y, phone_size.x], radius = phone_corner_radius);
 
@@ -92,6 +111,9 @@ difference() {
 
     // Communication connector cutout
     if(com_connector_cutout_size > 0) mirror([com_connector_side == -1 ? 1 : 0, 0, 0]) translate(v = [0, (total_platform_depth - com_connector_cutout_size) / 2 + com_connector_cutout_offset, platform_base_height]) cube([total_platform_width, com_connector_cutout_size, holder_height]);
+
+    // Button cutout
+    if(btn_cutout_size > 0) translate(v = [-phone_size.y / 2 + btn_cutout_offset, platform_wall + $fudge, platform_base_height])  cube([btn_cutout_size, total_platform_depth, holder_height]);
 
     // Spirit level hole
     if(spirit_level_height > 0 && spirit_level_diameter > 0) {
