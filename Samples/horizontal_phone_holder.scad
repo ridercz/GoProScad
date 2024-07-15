@@ -34,7 +34,7 @@ platform_wall = 3;
 // Platform ledge width - the part of the phone that is not covered by the platform
 platform_ledge_width = 5;
 // Platform base height
-platform_base_height = 1;
+platform_base_height = 2;
 // Holder height
 holder_height = 20;
 
@@ -48,7 +48,7 @@ spirit_level_height = 8;
 
 /* [Power connector cutout] */
 // Cutout width; set 0 to disable
-pwr_connector_cutout_size = 10;
+pwr_connector_cutout_size = 12;
 // Offset from the center of the platform
 pwr_connector_cutout_offset = 0;
 // Position of the power connector cutout
@@ -64,9 +64,9 @@ com_connector_side = -1; // [-1:Left, 1:Right]
 
 /* [Button cutout] */
 // Cutout width; set 0 to disable
-btn_cutout_size = 40;
+btn_cutout_size = 42;
 // Offset from top of the phone
-btn_cutout_offset = 30;
+btn_cutout_offset = 28;
 
 /* [Screws] */
 // Screw rod diameter
